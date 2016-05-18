@@ -4,9 +4,9 @@ Sviluppo di un sistema embedded per la gestione di una serra automatizzata. Il s
 
 # Autori
 
-Pasquale Oppido
-Angelo Marzucco
-Andrea Russo
+- Pasquale Oppido
+- Angelo Marzucco
+- Andrea Russo
 
 # Introduzione
 
