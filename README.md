@@ -14,8 +14,8 @@ Le colture in serra rappresentano un importante comparto produttivo all’interno 
 
 # Scopo
 
-Il sistema ha il compito di controllare il processo di irrigazione in una serra a partire dalla misura dell'umidità del terreno, al fine di mantenerla costante alla soglia necessaria per il tipo di piantaggione.
-Il sistema, inoltre controlla la luce all'interno della serra, con l'ausilio di un sensore crepuscolare, al fine di atture una coltivazione intensiva. Viene scelto il segnale di pronta raccolta attraverso la misura dell'altezza delle piante.
+Il sistema ha il compito di controllare il processo di irrigazione in una serra a partire dalla misura dell'umidità del terreno, al fine di mantenerla costante alla soglia necessaria per il tipo di piantagione.
+Il sistema, inoltre controlla la luce all'interno della serra, con l'ausilio di un sensore crepuscolare, al fine di attuare una coltivazione intensiva. Viene scelto il segnale di pronta raccolta attraverso la misura dell'altezza delle piante.
 
 # Climatizzazione
 
