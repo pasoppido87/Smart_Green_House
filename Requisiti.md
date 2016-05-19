@@ -21,4 +21,4 @@ La pianta è pronta all'uso quando la sua altezza è superiore al 20 cm. Il taglio
 
 
 
-| Tipo di coltivazione | Basilico |
+/// Tipo di coltivazione /// Basilico ///
