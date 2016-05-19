@@ -1,4 +1,4 @@
-# Tipo di coltivazione
+- Tipo di coltivazione
 
 Per l'implementazione del sistema è stata scelta la coltivazione di piante di Basilico. La medesima coltura richiede i seguenti requisiti:
 
