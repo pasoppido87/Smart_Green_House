@@ -21,4 +21,12 @@ La pianta è pronta all'uso quando la sua altezza è superiore al 20 cm. Il taglio
 
 
 
-/// Tipo di coltivazione /// Basilico ///
+| Tipo di coltivazione     | Basilico |
+| :---:                    | :---:    |
+|     Temp. Min [°]        | >18      |
+|     Temp.Max[°]          |  20-25   |
+|    Umidità aria[RH%]     |  55-75   |
+|    Umidità terreno[RH%]  |   <70    |
+|     Ore Luce             | >10-12   |
+|    Altezza uso[cm]       |   20     |
+|    Altezza taglio[cm]    |  >15     |
