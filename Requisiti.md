@@ -19,3 +19,6 @@ Il basilico necessita, per una crescita omogenea, un'esposizione luminosa(solare
 
 La pianta è pronta all'uso quando la sua altezza è superiore al 20 cm. Il taglio della parte più alta della medesima può essere effettuato dopo 60 giorni dalla semina e può essere ripetuta successivamente, senza apportare problemi alla pianta, ogni 12-14 giorni. Il taglio può essere effettuato ad un'altezza da terra di 15 cm.
 
+
+
+| Tipo di coltivazione | Basilico |
