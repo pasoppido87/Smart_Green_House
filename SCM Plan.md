@@ -7,10 +7,10 @@ Si vogliono controllare altezza della pianta, temperatura dell'aria, umidità del
 
 - Management
 Il team di sviluppo è organizzato come segue:
---Configuration Manager : Russo Andrea;
---Change control board member: Oppido Pasquale e Marzucco Angelo;
---Developer: Russo, Oppido, Marzucco;
---Auditor: Russo, Oppido, Marzucco.
+  *Configuration Manager : Russo Andrea;
+  *Change control board member: Oppido Pasquale e Marzucco Angelo;
+  *Developer: Russo, Oppido, Marzucco;
+  *Auditor: Russo, Oppido, Marzucco.
 Le responsabilità sono distribuite in maniera uniforme in quanto essendo ridotto il numero di compomenti del team risulta inutile una suddivisione netta degli sviluppatori.
 Ognuno degli stessi contribuirà equamente allo sviluppo del sistema SW, sul quale verranno effettuate successivmente le normali attività di testing.
 
