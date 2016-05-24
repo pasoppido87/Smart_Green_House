@@ -7,20 +7,20 @@ Si vogliono controllare altezza della pianta, temperatura dell'aria, umidità del
 
 - Management
 Il team di sviluppo è organizzato come segue:
-  *Configuration Manager : Russo Andrea;
-  *Change control board member: Oppido Pasquale e Marzucco Angelo;
-  *Developer: Russo, Oppido, Marzucco;
-  *Auditor: Russo, Oppido, Marzucco.
+  * Configuration Manager : Russo Andrea;
+  * Change control board member: Oppido Pasquale e Marzucco Angelo;
+  * Developer: Russo, Oppido, Marzucco;
+  * Auditor: Russo, Oppido, Marzucco.
 Le responsabilità sono distribuite in maniera uniforme in quanto essendo ridotto il numero di compomenti del team risulta inutile una suddivisione netta degli sviluppatori.
 Ognuno degli stessi contribuirà equamente allo sviluppo del sistema SW, sul quale verranno effettuate successivmente le normali attività di testing.
 
--Attività
+- Attività
 (serie di cose che Di Penta manco ha spiegato)
 
--Regole di naming dei documenti(codice, ecc..)
+- Regole di naming dei documenti(codice, ecc..)
 (dobbiamo fissarle noi)
 
--Tool Utilizzati
+- Tool Utilizzati
 Per il sistema di versioning verrà utilizzato GitHub ed il repository del progetto si trova al link: https://github.com/pasoppido87/Smart_Green_House .
 Sulle singole macchine è stato istallato l'IDE di Arduino per lo sviluppo SW e SourceTree, linkato all'account GitHub di ogni singolo sviluppatore; quest'ultimo gestisce i commit locali ed i push fatti in remoto riferiti al progetto.
 
