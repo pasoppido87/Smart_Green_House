@@ -10,8 +10,8 @@ Le colture in serra rappresentano un importante comparto produttivo all’interno 
 
 # Scopo
 
-Il sistema ha il compito di controllare il processo di irrigazione in una serra a partire dalla misura dell'umidità del terreno, al fine di mantenerla costante alla soglia necessaria per il tipo di piantagione.
-Il sistema, inoltre controlla la luce all'interno della serra, con l'ausilio di un sensore crepuscolare, al fine di attuare una coltivazione intensiva. Viene scelto il segnale di pronta raccolta attraverso la misura dell'altezza delle piante.
+Il sistema ha il compito di controllare il processo di irrigazione in una serra a partire dalla misura dell'umidità del terreno, al fine di mantenerla costante alla soglia necessaria per il tipo di piantagione prescelto.
+Il sistema, inoltre controlla la luce all'interno della serra, con l'ausilio di un sensore crepuscolare, al fine di attuare una coltivazione intensiva. Viene scelto il segnale di pronta raccolta attraverso la misura dell'altezza delle piante. Inoltre vengono monitorati parametri ambientali come temperatura ed umidità dell'aria al fine di controllare l'eventuale attivazione dei sistemi di riscaldamento e/o di umidificazione all'interno della serricoltura.
 
 # Climatizzazione
 
@@ -22,7 +22,7 @@ Si tratta dei cosiddetti “cooling system”e “fog system”:
 
 -Il “fog system” consiste nella diffusione in serra di acqua nebulizzata ad alta pressione (35-40 bar) ad opera di ugelli montati su tubazioni poste sopra la coltura. L’intero sistema operativo delle serre moderne (teli-ombreggianti, aperture e chiusure meccanizzate, regolazione termica, ecc.) può essere gestito interamente da computer sulla base degli input trasmessi da sensori e da microprocessori periferici. 
 
-# Accumolo termico nel terreno
+# Accumulo termico nel terreno
 
 Com’è noto, le temperature nel suolo sono più costanti rispetto a quelle dell’aria e meno influenzabili dalle variazioni climatiche esterne a mano a mano che la profondità aumenta.  Queste considerazioni hanno suggerito la messa a punto di sistemi adatti alla stabilizzazione della temperatura nelle serre che si basano sulla circolazione forzata dell’aria all’interno di tubi corrugati sistemati nel terreno.  Nel periodo estivo l’aria esterna che entra nei tubi in corrispondenza del ventilatore è più calda del terreno. Nel passaggio all’interno dei tubi sotterranei essa cede il proprio calore al terreno ed esce più fresca e può raffreddare la serra. Nello stesso tempo il terreno si scalda. Questa tecnica ha un’interessante possibilità di applicazione nelle serre in stagione fredda.  Il sistema prevede di far ricircolare l’aria della serra, con l’accumulo del calore nel terreno durante il giorno e la restituzione del calore durante la notte, con il risultato di mantenere più alta la temperatura della serra durante le ore notturne. Il sistema può essere migliorato prevedendo sistemi di accumulo costituiti, ad esempio, da serbatoi con un certo volume d’acqua posti nel suolo e attraversati dalle tubazioni dell’aria.   
 
