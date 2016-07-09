@@ -21,13 +21,13 @@ Ognuno degli stessi contribuirà equamente allo sviluppo del sistema SW, sul qua
  	* funzioni: il nome delle funzioni deve essere con la lettera minuscola e nel caso di nomi composti separati da underscore.
 	* variabili: il nome delle variabili è assegnato usando un approccio CamelCase. Le variabili devono avere un minimo di quattro lettere. 
 
- - Schedule:
+- Schedule:
 
 	La prima versione funzionante del software deve essere rilasciata entro il 12/07/2016. In particolare entro questa data devono essere implementate le seguenti funzioni:
 	* light_control() : si occupa di regolare l'illuminazione della serra dalla lettura di un sensore crepuscolare.
 	* umidity_gnd_control() : si occupa di regolare l'umidità del terreno dalla lettura di un sensore di umidità e con il controllo di una pompa di irrigazione.
 	* temp_humid_control() : si occupa di controllare la temperatura e l'umidità dell'aria attivando/disattivando i sistemi di riscaldamento e/o di umidificazione dell'aria.
-        * ready_to_collect() : si occupa tenere sotto controllo l'altezza della piantina tramite l'uso di un sensore ad ultrasuoni, al fine di segnalare la pronta raccolta al raggiungimento di una certa altezza della piantina.
+        * ready_to_collect() :  si occupa tenere sotto controllo l'altezza della piantina tramite l'uso di un sensore ad ultrasuoni, al fine di segnalare la pronta raccolta al raggiungimento di una certa altezza della piantina.
         
 - Tool Utilizzati:
 
