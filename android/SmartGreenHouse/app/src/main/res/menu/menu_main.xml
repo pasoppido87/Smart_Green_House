@@ -1,0 +1,17 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.andrea.pizzapp.MainActivity"
+    >
+    <item
+        android:id="@+id/manualControl"
+        android:orderInCategory="100"
+        android:title="Controllo manuale"
+        android:icon="@drawable/manualcontrol"
+        app:showAsAction="always"
+        />
+
+
+
+</menu>

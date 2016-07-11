@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Smart Green House</string>
+    <string name="title_activity_dati">Lettura Dati</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_manual_control">Controllo manuale</string>
+    <string name="title_activity_home">Home</string>
+</resources>

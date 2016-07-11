@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.russo_oppido_marzucco.sweng.smartgreenhouse">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Dati"
+            android:label="@string/title_activity_dati"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ManualControl"
+            android:label="@string/title_activity_manual_control"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DeviceList"
+            android:label="Dispositivi"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".Home"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>
