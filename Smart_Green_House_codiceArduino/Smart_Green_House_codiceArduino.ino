@@ -76,7 +76,7 @@ DHT dht(dhtPin,DHT11);                                          //creazione ista
 SoftwareSerial bluetooth = SoftwareSerial(rx_pin,tx_pin);       //creo un istanza in grado di definire una porta seriale virtuale utile alla comunicazione bluetooth dei dati
 
 void setup() {
-Serial.begin(9600);             //abilito la porta seriale (COM#) per la lettura dei dati prodotti dal sistema(posso anche eliminare se non stampo i dati sul monitor seriale)
+//Serial.begin(9600);             //abilito la porta seriale (COM#) per la lettura dei dati prodotti dal sistema(posso anche eliminare se non stampo i dati sul monitor seriale)
 dht.begin();                    //abilito la lettura dati mediante il modulo DHT
 bluetooth.begin(9600);          //abilito la comunicazione seriale virtuale, con baud 9600 bps, per interconnettermi al modulo bluetooth HC-05
 pinMode(echo,INPUT);            //abilito I/O del trasduttore a tempo di volo (echo = IN, trigger = OUT)
@@ -104,7 +104,7 @@ void loop() {
     selection_auto_manual();         //verifico il tipo di controllo da effettuare sull'impianto
     if(manual) manual_control();     //se manual = 1, abilito il controllo manuale tramite l'applicazione android(piloto opportunamente gli switch)
     else auto_control();             //se manual = 0, Arduino controllo autonomamente l'impianto
-    invio_BLUETOOTH();               //trasferisco, tramite bluetooth, i valori acquisiti riferiti allo stato della serra e della pianta
+    invio_bluetooth();               //trasferisco, tramite bluetooth, i valori acquisiti riferiti allo stato della serra e della pianta
    }
 
 //Funzione in gradi di aggiornare i parametri riferiti allo stato dell'impianto
@@ -206,7 +206,7 @@ void serial_print(){
 }
 
 //Funzione in grado di trasmettere, tramite una comunicazione seriale, i dati del sistema via bluetooth all'applicazione Android connessa al modulo HC-05
-void invio_BLUETOOTH(){  //invio una determinata stringa di dati che inizia per * e termina con # al fine di condificare correttamente tramite l'app l'inizio e la fine trasmissione dati
+void invio_bluetooth(){  //invio una determinata stringa di dati che inizia per * e termina con # al fine di condificare correttamente tramite l'app l'inizio e la fine trasmissione dati
   bluetooth.print("*");
   bluetooth.print(temp_aria);  //trametto il valore della temperatura dell aria
   bluetooth.print(" ");
