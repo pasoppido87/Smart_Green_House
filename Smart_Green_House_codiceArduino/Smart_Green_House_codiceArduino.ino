@@ -40,18 +40,18 @@ limitations under the License.
 #include <SoftwareSerial.h>          //libreria atta a creare una porta di comunicazione seriale virtuale differente da quella costituita su Arduino UNO dai pin 0 ed 1(seriale via USB)
 
 //Definizione dei pin analogico/digitali affidati alla lettura delle uscite prodotte dai sensori
-#define dhtPin A0           //collego il sensore DHT al pin A0
+#define dhtPin A0            //collego il sensore DHT al pin A0
 #define luxPin A1           //collego il sensore di luminosità ambientale al pin A1
-#define humGPin A2         //collego il sensore per monitorare l'umidità del terreno al pin A2
-#define echo 3             //seleziono i pin interessati allo studio dell'altezza della pianta tramite  HC-SR04
-#define trigger 2          //traduttore di tistanza a tempo di volo
+#define humGPin A2          //collego il sensore per monitorare l'umidità del terreno al pin A2
+#define echo 3              //seleziono i pin interessati allo studio dell'altezza della pianta tramite  HC-SR04
+#define trigger 2           //traduttore di tistanza a tempo di volo
 
 //Definizione dei pin digitali a cui sono affidati i controlli via arduino dell'impianto
-#define luce_UV 4           //pin ON/OFF luce ultravioletta notturna all'interno della serra
+#define luce_UV 8           //pin ON/OFF luce ultravioletta notturna all'interno della serra
 #define riscalda_ven 5      //attivazione riscaldamento al di sotto di una determinata temperatura
-#define raccolta 6          //segnalamento possibilità di cimatura/raccolta della pianta di basilico
-#define irriga 7            //abilito un segnale che ci permette di irrigare il terreno in determinate condizioni climatiche(in funzione di umidità del terreno e della luminosità)
-#define umidifica 8          //abilito un segnale che ci permette di attivare/disattivare un sistema di umidificazione ambietale provvisto di una ventola
+#define raccolta 4          //segnalamento possibilità di cimatura/raccolta della pianta di basilico
+#define irriga 6            //abilito un segnale che ci permette di irrigare il terreno in determinate condizioni climatiche(in funzione di umidità del terreno e della luminosità)
+#define umidifica 7         //abilito un segnale che ci permette di attivare/disattivare un sistema di umidificazione ambietale provvisto di una ventola
 #define led_manual 12       //definisco un LED di stato che indica il tipo di controllo effettuato sull'impianto(ON -> MANUALE, OFF -> AUTOMATICO)
 
 //Definizione dei pin digitali affidati alla comunicazione seriale tramite Bluetooth(modulo HC-05)
@@ -81,7 +81,7 @@ dht.begin();                    //abilito la lettura dati mediante il modulo DHT
 bluetooth.begin(9600);          //abilito la comunicazione seriale virtuale, con baud 9600 bps, per interconnettermi al modulo bluetooth HC-05
 pinMode(echo,INPUT);            //abilito I/O del trasduttore a tempo di volo (echo = IN, trigger = OUT)
 pinMode(trigger,OUTPUT); 
-manual = 0;                    //inizializzo manual=0 per far partire l'impianto da una condizione di controllo automatico mediante apposite funzionalità presenti nel codice
+manual = 0;                    //inizializzo manual=0 per far partire l'impianto da una condizione di controllo AUTOMATICO mediante apposite funzionalità presenti nel codice
 
 //Imposto come output i pin digitali
 pinMode(luce_UV,OUTPUT);           //uscita per abilitare l'illuminazione UV nella serra
@@ -101,10 +101,10 @@ digitalWrite(led_manual,LOW);
 
 void loop() {
     stato_impianto();                //aggiornamento variabili contenenti lo stato(parametri d'interesse) dell'impianto
-    selection_auto_manual();        //verifico il tipo di controllo da effettuare sull'impianto
-    if(manual) manual_control();    //se manual = 1, abilito il controllo manuale tramite l'applicazione android(piloto opportunamente gli switch)
-    else auto_control();            //se manual = 0, Arduino controllo autonomamente l'impianto
-    invio_BLUETOOTH();             //trasferisco, tramite bluetooth, i valori acquisiti riferiti allo stato della serra e della pianta
+    selection_auto_manual();         //verifico il tipo di controllo da effettuare sull'impianto
+    if(manual) manual_control();     //se manual = 1, abilito il controllo manuale tramite l'applicazione android(piloto opportunamente gli switch)
+    else auto_control();             //se manual = 0, Arduino controllo autonomamente l'impianto
+    invio_BLUETOOTH();               //trasferisco, tramite bluetooth, i valori acquisiti riferiti allo stato della serra e della pianta
    }
 
 //Funzione in gradi di aggiornare i parametri riferiti allo stato dell'impianto
