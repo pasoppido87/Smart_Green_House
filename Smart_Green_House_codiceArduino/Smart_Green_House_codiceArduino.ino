@@ -219,9 +219,9 @@ void invio_bluetooth(){  //invio una determinata stringa di dati che inizia per 
   bluetooth.print(umidi_terra);    //trasmetto il valore dell'altezza della pianta
   bluetooth.print(" ");
   bluetooth.println("#");
-  delay(500);            //inserisco un ritardo di 0,5 secondi al fine di evitare l'intasamento del buffer seriale su cui trasmetto i dati
+  delay(1000);            //inserisco un ritardo di 1 secondi al fine di evitare l'intasamento del buffer seriale su cui trasmetto i dati
                          //N.B. pur aggiornando l app Android, la medesima rileva i vecchi pacchetti inviati. In questo modo vado ad ottenere sempre il valore attuale dello stato sull APP
-                         //svantaggio: ritardo di 0,5 secondi l'abilitazione dei vari switch in modalità di CONTROLLO MANUALE(tramite app) sul sistema
+                         //svantaggio: ritardo di 1 secondi l'abilitazione dei vari switch in modalità di CONTROLLO MANUALE(tramite app) sul sistema
 }
 
 //Funzione in grado di abilitare i controlli sull'impianto tramite il pilotaggio di opportuni switch presenti nell'applicazione Android nella finestra CONTROLLO MANUALE
