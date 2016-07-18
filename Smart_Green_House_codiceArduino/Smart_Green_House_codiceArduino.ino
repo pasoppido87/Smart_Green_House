@@ -284,5 +284,6 @@ void selection_auto_manual(){
   digitalWrite(luce_UV,LOW);
   digitalWrite(riscalda_ven,LOW);
   digitalWrite(irriga,LOW);
+  
 }
 }
