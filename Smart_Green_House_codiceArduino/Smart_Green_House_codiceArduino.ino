@@ -287,3 +287,122 @@ void selection_auto_manual(){
   
 }
 }
+
+void testOk(){  //invio una determinata stringa di dati che inizia per * e termina con # al fine di condificare correttamente tramite l'app l'inizio e la fine trasmissione dati
+  //stringa per testare la "Lettura Dati" entro i range di corretto lavoro della serricoltura
+  bluetooth.print("*");
+  bluetooth.print(20);
+  bluetooth.print(" ");
+  bluetooth.print(50);
+  bluetooth.print(" ");
+  bluetooth.print(50);
+  bluetooth.print(" ");
+  bluetooth.print(15);
+  bluetooth.print(" ");
+  bluetooth.print(50);
+  bluetooth.print(" ");
+  bluetooth.println("#");
+  delay(1000);  
+}
+
+void testTemp15(){  //invio una determinata stringa di dati che inizia per * e termina con # al fine di condificare correttamente tramite l'app l'inizio e la fine trasmissione dati
+  //stringa per testare la "Lettura Dati"; Temperatura sotto il range di normale funzionamento
+  bluetooth.print("*");
+  bluetooth.print(15);      //temperatura out of bound
+  bluetooth.print(" ");
+  bluetooth.print(50);
+  bluetooth.print(" ");
+  bluetooth.print(50);
+  bluetooth.print(" ");
+  bluetooth.print(15);
+  bluetooth.print(" ");
+  bluetooth.print(50);
+  bluetooth.print(" ");
+  bluetooth.println("#");
+  delay(1000);  
+}
+
+void testUmidita80(){  //invio una determinata stringa di dati che inizia per * e termina con # al fine di condificare correttamente tramite l'app l'inizio e la fine trasmissione dati
+  //stringa per testare la "Lettura Dati"; Umidità Aria sopra il range di normale funzionamento
+  bluetooth.print("*");
+  bluetooth.print(20);
+  bluetooth.print(" ");
+  bluetooth.print(80);        //umidità out of bound
+  bluetooth.print(" ");
+  bluetooth.print(50);
+  bluetooth.print(" ");
+  bluetooth.print(15);
+  bluetooth.print(" ");
+  bluetooth.print(50);
+  bluetooth.print(" ");
+  bluetooth.println("#");
+  delay(1000);  
+}
+
+void testUmidita40(){  //invio una determinata stringa di dati che inizia per * e termina con # al fine di condificare correttamente tramite l'app l'inizio e la fine trasmissione dati
+  //stringa per testare la "Lettura Dati"; Umidità Aria sotto il range di normale funzionamento
+  bluetooth.print("*");
+  bluetooth.print(20);
+  bluetooth.print(" ");
+  bluetooth.print(40);       //umidità out of bound
+  bluetooth.print(" ");
+  bluetooth.print(50);
+  bluetooth.print(" ");
+  bluetooth.print(15);
+  bluetooth.print(" ");
+  bluetooth.print(50);
+  bluetooth.print(" ");
+  bluetooth.println("#");
+  delay(1000);  
+}
+
+void testLuce35(){  //invio una determinata stringa di dati che inizia per * e termina con # al fine di condificare correttamente tramite l'app l'inizio e la fine trasmissione dati
+  //stringa per testare la "Lettura Dati"; Luminosità ambientale sotto il range di normale funzionamento
+  bluetooth.print("*");
+  bluetooth.print(20);
+  bluetooth.print(" ");
+  bluetooth.print(50);
+  bluetooth.print(" ");
+  bluetooth.print(35);   //Luce out of bound
+  bluetooth.print(" ");
+  bluetooth.print(15);
+  bluetooth.print(" ");
+  bluetooth.print(50);
+  bluetooth.print(" ");
+  bluetooth.println("#");
+  delay(1000);  
+}
+
+void testAltezza22(){  //invio una determinata stringa di dati che inizia per * e termina con # al fine di condificare correttamente tramite l'app l'inizio e la fine trasmissione dati
+  //stringa per testare la "Lettura Dati"; Altezza pianta sopra il range di raccolta/cimatura
+  bluetooth.print("*");
+  bluetooth.print(20);
+  bluetooth.print(" ");
+  bluetooth.print(50);
+  bluetooth.print(" ");
+  bluetooth.print(50);
+  bluetooth.print(" ");
+  bluetooth.print(22);    //altezza out of bound
+  bluetooth.print(" ");
+  bluetooth.print(50);
+  bluetooth.print(" ");
+  bluetooth.println("#");
+  delay(1000);  
+}
+
+void testAllAlert(){  //invio una determinata stringa di dati che inizia per * e termina con # al fine di condificare correttamente tramite l'app l'inizio e la fine trasmissione dati
+  //stringa per testare la "Lettura Dati"; Tutti i parametri sotto il range di normale funzionamento
+  bluetooth.print("*");
+  bluetooth.print(15); 
+  bluetooth.print(" ");
+  bluetooth.print(30);
+  bluetooth.print(" ");
+  bluetooth.print(30);
+  bluetooth.print(" ");
+  bluetooth.print(25);
+  bluetooth.print(" ");
+  bluetooth.print(20);
+  bluetooth.print(" ");
+  bluetooth.println("#");
+  delay(1000);  
+}
