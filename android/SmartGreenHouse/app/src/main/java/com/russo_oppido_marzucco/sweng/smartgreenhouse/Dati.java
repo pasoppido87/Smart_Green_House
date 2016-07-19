@@ -99,7 +99,7 @@ public class Dati extends AppCompatActivity {
             public void onClick(View view) {
 
                 receivedData();
-                AlertDialog.Builder alertDialog = new AlertDialog.Builder(context);
+               /*AlertDialog.Builder alertDialog = new AlertDialog.Builder(context);
                 alertDialog.setTitle("Avviso");
                 alertDialog.setMessage("Lettura dati completata!");
                 alertDialog.setPositiveButton("OK", new DialogInterface.OnClickListener() {
@@ -108,7 +108,7 @@ public class Dati extends AppCompatActivity {
 
                     }
                 });
-                alertDialog.show();
+                alertDialog.show();*/
 
             }
         });
