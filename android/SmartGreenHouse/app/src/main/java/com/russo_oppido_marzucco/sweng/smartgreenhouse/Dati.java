@@ -139,6 +139,7 @@ public class Dati extends AppCompatActivity {
 
                     String string =new String(buffer);
 
+                    try{
                         String[] valori= string.split("\n");
                         int length=  Array.getLength(valori);
 
@@ -170,7 +171,7 @@ public class Dati extends AppCompatActivity {
                         altezza.setText(t4);
                         umiditaTerreno.setText(t5);
 
-                    try{
+
                         String[] temp=t1.split(" ");
                         temperaturaVar=Integer.parseInt(temp[0]);
                         temp=t2.split(" ");
@@ -181,8 +182,10 @@ public class Dati extends AppCompatActivity {
                         altezzaVar= Integer.parseInt(temp[0]);
                         temp=t5.split(" ");
                         umiditaTerraVar= Integer.parseInt(temp[0]);
+                        Toast.makeText(getApplicationContext(),"Dati aggiornati!",Toast.LENGTH_SHORT).show();
 
                     }catch (Exception e){
+                        Toast.makeText(getApplicationContext(),"Errore sincronizzazione! Riprovare.",Toast.LENGTH_SHORT).show();
 
                     }
 
